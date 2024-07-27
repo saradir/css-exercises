@@ -17,7 +17,7 @@ body {
 }
 
 .sidebar {
-  width: 300px;
+  width: 200px;
   background: royalblue;
   box-sizing: border-box;
 }
@@ -26,4 +26,70 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/* solution */
+
+body{
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+}
+
+.content{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: 1000;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 5px;
+  padding: 5px;
+
+}
+ 
+.card-box{
+  display: flex;
+  padding: 40px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 250px;
+  padding: 16px;
+}
+
+.sidebar{
+  flex-shrink: 0;
+  justify-content: flex-start;
+}
+
+.footer, .header{
+  flex-shrink: 0;
 }
