@@ -14,14 +14,22 @@ body {
 }
 
 .content {
+  margin: 16px auto;
   background: #e3f4ff;
 }
 
 .button-container {
   background: #e3f4ff;
+  text-align: center;
+  align-content: center;
+  margin: 16px auto;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  align-items: center;
+  align-content: center;
+  margin:auto;
 }
